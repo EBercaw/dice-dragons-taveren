@@ -22,6 +22,9 @@ header{
     text-align: center;
     
 }
+nav{
+    outline: 1px solid red;
+}
 h1{
     font-family: "Jim Nightshade", cursive;
     font-weight: 400;
@@ -73,6 +76,17 @@ footer{
     
     /*outline: 1px solid red;*/
 }
+a{
+    color:#a60505;
+    text-decoration: none;
+}
+
+.lines a{
+    color: #000000;
+    text-decoration: none;
+}
+
+
 
 @media screen and (max-width: 768px) { /*phone*/
     h1{
