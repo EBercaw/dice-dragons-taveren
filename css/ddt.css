@@ -29,6 +29,11 @@ h1{
     font-style: normal;
     color: #400224;
 }
+h3{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
 section{
     background-color: #d99b66;
     margin: 0 10%; 
@@ -36,6 +41,7 @@ section{
     display: flex; /* Use flexbox for horizontal layout */
     flex-wrap: wrap; /* Allow items to wrap to next line if needed */
     justify-content: center; /* Center items horizontally */
+    /*outline: 1px solid red;*/
 }
 h2{
     font-family: "Nanum Brush Script", cursive;
@@ -45,11 +51,15 @@ h2{
     color:#a60505;
     text-align: center;
     flex: 1; /* Allow items to grow and shrink equally */
+    /*outline: 1px solid red;*/
+
 }
 img{
     display: block; /* Ensure images are responsive */
     margin: 0 auto; /* Center images */
     max-width: 100%; /* Ensure images don't exceed container width */
+    /*outline: 1px solid red;*/
+
 }
 button{
     text-align: center;
@@ -60,24 +70,69 @@ button{
 footer{
     background-color: #8c583a;
     height: 75px;
-    object-position: bottom;
+    
+    /*outline: 1px solid red;*/
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /*phone*/
     h1{
-        font-size: 36px;
+        font-size: 48px;
     }
     section{
-        margin: 0 10px;
+        margin: 0 10%; 
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+        justify-content: center; /* Center items horizontally */
     }
     h2{
-        font-size: 24px;
+        font-size: 36px;
     }
     footer{
         object-position: bottom;
 
     }
 }
+@media  screen and (min-width: 768px) and (max-width: 1025px) { /*tablet*/
+    h1{
+        font-size: 48px;
+    }
+    section{
+        margin: 0 10%; 
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+        justify-content: center; /* Center items horizontally */
+        flex-direction: column;
+        
+    }
+    h2{
+        font-size: 36px;
+        text-align: center;
+    }
+    footer{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 1025px) { /*desktop*/
+    h1{
+        font-size: 48px;
+    }
+    section{
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+        margin-top: 5%;
+    }
+    h2{
+        font-size: 36px; /*i can't get the text to go under the image margin nor padding will work need to find out how to fix :( */
+        margin-top: 300px;
+    }
+    footer{
+        object-position: bottom;
+        margin-top: 15%;
+
+    }
+}
+
 /*.nanum-brush script-regular {
     font-family: "Nanum Brush Script", cursive;
     font-weight: 400;
