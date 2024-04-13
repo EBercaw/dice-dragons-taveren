@@ -1,0 +1,178 @@
+/*font*/
+
+/*nanum brush*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+/*jim nightshade*/
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Nanum+Brush+Script&display=swap');
+
+/*reset style*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #59341e;
+}
+header{
+    background-color: #8c583a;
+    height: 75px;
+    text-align: center;
+    
+}
+nav{
+    /*outline: 1px solid red;*/
+}
+h1{
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    font-size: 48px;
+    font-style: normal;
+    color: #400224;
+    text-decoration: none;
+}
+.title{
+    color: #400224;
+    text-decoration: none;
+}
+h3{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+section{
+    background-color: #d99b66;
+    margin: 0 10%; 
+    padding: 20px; 
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    justify-content: center; /* Center items horizontally */
+    /*outline: 1px solid red;*/
+}
+h2{
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color:#a60505;
+    text-align: center;
+    flex: 1; /* Allow items to grow and shrink equally */
+    /*outline: 1px solid red;*/
+
+}
+
+img{
+    display: block; /* Ensure images are responsive */
+    margin: 0 auto; /* Center images */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    /*outline: 1px solid red;*/
+
+}
+button{
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+footer{
+    background-color: #8c583a;
+    height: 75px;
+    
+    /*outline: 1px solid red;*/
+}
+a{
+    color:#a60505;
+    text-decoration: none;
+}
+
+.lines a{
+    color: #000000;
+    text-decoration: none;
+}
+
+/*dice page*/
+.price{
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+}
+/*aboutpage*/
+.about{
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+.aboutpic{
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) { /*phone*/
+    h1{
+        font-size: 48px;
+    }
+    section{
+        margin: 0 10%; 
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+        justify-content: center; /* Center items horizontally */
+    }
+    h2{
+        font-size: 36px;
+    }
+    footer{
+        object-position: bottom;
+
+    }
+}
+@media  screen and (min-width: 768px) and (max-width: 1025px) { /*tablet*/
+    h1{
+        font-size: 48px;
+    }
+    section{
+        margin: 0 10%; 
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+        justify-content: center; /* Center items horizontally */
+        flex-direction: column;
+        
+    }
+    h2{
+        font-size: 36px;
+        text-align: center;
+    }
+    footer{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 1025px) { /*desktop*/
+    h1{
+        font-size: 48px;
+    }
+    section{
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+        margin-top: 5%;
+    }
+    h2{
+        font-size: 36px; /*i can't get the text to go under the image margin nor padding will work need to find out how to fix :( */
+        margin-top: 300px;
+    }
+    footer{
+        object-position: bottom;
+        margin-top: 15%;
+
+    }
+}
+
+/*.nanum-brush script-regular {
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .jim-nightshade-regular {
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }*/
+  
