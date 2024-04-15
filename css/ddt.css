@@ -108,7 +108,7 @@ a{
 /*contact*/
 .tw{
     margin-top: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 30%;
 }
 
 .inst{
@@ -118,7 +118,7 @@ a{
 
 .em{
       margin-top: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 30%;
 }
 @media screen and (max-width: 768px) { /*phone*/
     h1{
