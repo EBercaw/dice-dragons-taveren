@@ -79,6 +79,7 @@ button{
 footer{
     background-color: #8c583a;
     height: 75px;
+    object-position: bottom;
     
     /*outline: 1px solid red;*/
 }
@@ -92,35 +93,52 @@ a{
     text-decoration: none;
 }
 
+.con{
+    color: #400224;
+    text-decoration: none;
+}
+
 /*dice page*/
 .price{
     font-family: "Jim Nightshade", cursive;
     font-weight: 400;
 }
 /*aboutpage*/
-.about{
+/*.about{
     margin-top: 30%;
     margin-bottom: 10%;
 }
-.aboutpic{
+.aboutvid{
     margin-top: 5%;
-}
+}*/
 /*contact*/
 /*i can not figure out how to get these to sepreate. they all have there own h2 with class, they just will not sepreate :(*/
 .tw{
-    margin-top: 30%;
-    margin-bottom: 30%;
-    height: 10%
+    background-color: #d99b66;
 }
 
 .inst{
-      margin-top: 30%;
-    margin-bottom: 10%;
+    background-color: #d99b66;
+
 }
 
 .em{
-      margin-top: 30%;
-    margin-bottom: 30%;
+    background-color: #d99b66;
+
+}
+.emailf{
+    background-color: #d99b66;
+}
+.in{
+    height: 30px;
+}
+.but{
+    background-color: #d99b66;
+    color:#a60505;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
 }
 @media screen and (max-width: 768px) { /*phone*/
     h1{
@@ -131,13 +149,44 @@ a{
         display: flex; /* Use flexbox for horizontal layout */
         flex-wrap: wrap; /* Allow items to wrap to next line if needed */
         justify-content: center; /* Center items horizontally */
+        margin-top: 20%;
     }
     h2{
         font-size: 36px;
     }
+    .tw{
+        background-color: #d99b66;
+        margin-top: 30%;
+        margin-bottom: 30%;
+        height: 10%
+    }
+    
+    .inst{
+          margin-top: 30%;
+        margin-bottom: 10%;
+        background-color: #d99b66;
+    
+    }
+    
+    .em{
+          margin-top: 30%;
+        margin-bottom: 30%;
+        background-color: #d99b66;
+    
+    }
     footer{
         object-position: bottom;
-
+        margin-top: 60%;
+    }
+    .about{
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+    .aboutvid{
+        margin-top: 5%;
+    }
+    .home{
+        display: none;
     }
 }
 @media  screen and (min-width: 768px) and (max-width: 1025px) { /*tablet*/
@@ -169,16 +218,92 @@ a{
         display: flex; /* Use flexbox for horizontal layout */
         flex-wrap: wrap; /* Allow items to wrap to next line if needed */
         margin-top: 5%;
+       /* outline: 1px solid red;*/
+
     }
     h2{
         font-size: 36px; /*i can't get the text to go under the image margin nor padding will work need to find out how to fix :( */
         margin-top: 300px;
+       /* outline: 1px solid red;*/
+
+    }
+    .di{
+           /* outline: 1px solid red;*/
+    }
+    .te{
+       /* outline: 1px solid red;*/
+
+    }
+    .tw{
+        background-color: #d99b66;
+        height: 20%;
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    .inst{
+          height: 20%;
+          width: 60%;
+          margin-left: 20%;
+
+        background-color: #d99b66;
+    
+    }
+    
+    .em{
+          height: 20%;
+          width: 60%;
+          margin-left: 20%;
+
+        background-color: #d99b66;
+    
+    }
+    .emailf{
+        background-color: #d99b66;
+        height: 20%;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20%;
+
     }
     footer{
         object-position: bottom;
         margin-top: 15%;
 
     }
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    
+    h2 {
+        /* Your default styles for h2 elements */
+        animation: slideIn 0.5s ease; /* Apply animation */
+    }
+    
+    h2:hover {
+        color: black; /* Change the color to blue when hovering */
+    }
+    .about{
+        background-color: #d99b66;
+        height: 20%;
+        width: 60%;
+        margin-left: 20%;
+
+    }
+    .aboutvid{
+        margin-left: 40%;
+
+    }
+    .lines {
+        display: none;
+}
+.home{
+    margin-left: 50%;
 }
 
 /*.nanum-brush script-regular {

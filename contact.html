@@ -18,7 +18,7 @@
     <!--this is top and where general nav is with spicife page links are products needs to be a drop down button or something-->
     </header>
 <main>
-  <section>
+
 <!--sorry if this page looks waird i had to do theh code in git hub. i had no access to my computer with the webpage files. also hi! :)-->
     <h2 class="tw"> 
     our twitter
@@ -34,10 +34,31 @@
           our email for any issues
           ddtarvern@gmail.com
       </h2>
-  </section>
+
+              <!-- Email Form -->
+             <h2>
+              <form class="emailf" id="emailForm" action="submit_email.php" method="post">
+                <label for="email">Enter email here to get updates on out newest deals:</label>
+                <input class="in" type="email" id="email" name="email" required>
+                <button class="but" type="submit">Submit</button>
+                <div id="emailError" style="color: red;"></div>
+            </form>
+             </h2>
+             <!-- JavaScript for Email Validation -->
+    <script>
+        document.getElementById("emailForm").addEventListener("submit", function(event) {
+            var emailInput = document.getElementById("email");
+            var emailError = document.getElementById("emailError");
+
+            if (!emailInput.checkValidity()) {
+                event.preventDefault();
+                emailError.textContent = "Please enter a valid email address.";
+            }
+        });
+    </script>
   <footer>
     <h2> 
-                   <a herf="contact.html">contact us! </a> 
+                   <a class="con" href="contact.html">contact us! </a> 
                </h2>  <!--where socials and how to contact support will be -->
   </footer>
 </main>
