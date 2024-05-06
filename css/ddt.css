@@ -188,6 +188,11 @@ a{
     .home{
         display: none;
     }
+    .about{
+    margin-top: 30%;
+    margin-bottom: 10%;
+} /*EDIT MADE AFTER DUE DATE*/
+
 }
 @media  screen and (min-width: 768px) and (max-width: 1025px) { /*tablet*/
     h1{
